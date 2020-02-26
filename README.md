@@ -3,20 +3,18 @@ A lightweight,simple,dynamic color picker library for Android
 
 1.0.1
 
-Implementation
+<b>Implementation:</b>
 
 [![](https://jitpack.io/v/metahex/Color-Picker.svg)](https://jitpack.io/#metahex/Color-Picker)
 
 `implementation 'com.github.metahex:Color-Picker:1.0.1'`
 
-Screenshot:
-<a>
-<img src="https://github.com/metahex/Color-Picker/blob/master/ss1.png" width="140" height="250"/>
+<b>Screenshots:</b>
 
-<img src="https://github.com/metahex/Color-Picker/blob/master/ss2.png" width="140" height="250"/>
-
+<img src="https://github.com/metahex/Color-Picker/blob/master/ss1.png" width="140" height="250"/> <img src="https://github.com/metahex/Color-Picker/blob/master/ss2.png" width="140" height="250"/> 
 <img src="https://github.com/metahex/Color-Picker/blob/master/ss3.png" width="140" height="250"/>
-</a>
+
+
 Usage
 
 `
