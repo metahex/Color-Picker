@@ -17,7 +17,7 @@ A lightweight,simple,dynamic color picker library for Android
 
 Usage
 
-`
+```java
         final ColorPickerDialog colorPickerDialog = new ColorPickerDialog(this);
 
         colorPickerDialog.addColors(colors16);
@@ -35,4 +35,4 @@ Usage
                 //Do something with the chosen color
             }
         });
-        `
+        ```
