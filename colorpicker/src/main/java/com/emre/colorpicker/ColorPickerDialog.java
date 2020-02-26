@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.view.View;
 import android.view.Window;
 import android.widget.GridLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,16 +18,32 @@ public class ColorPickerDialog extends Dialog implements View.OnClickListener {
     private ColorChooserListener colorChooserListener;
     private TextView headerTv;
     private GridLayout clrLayout;
+    private LinearLayout layout;
 
     public ColorPickerDialog(Context context) {
         super(context);
         init();
     }
 
+    public void setCornerRadius(int radius){
+
+    }
+
+    public void clear(){
+        colorList.clear();
+        clrLayout.removeAllViewsInLayout();
+    }
+
+    public void setBackgroundColor(int color){
+        this.clrLayout.setBackgroundColor(color);
+        this.layout.setBackgroundColor(color);
+    }
+
     private void init(){
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.picker_layout);
 
+        layout = findViewById(R.id.mainLayout);
         headerTv = findViewById(R.id.headerTv);
         clrLayout = findViewById(R.id.colorLayout);
     }

@@ -39,6 +39,8 @@ public class MainActivity extends Activity {
 
         colorPickerDialog.addColors(colors16);
 
+        colorPickerDialog.setBackgroundColor(Color.parseColor("#448aff"));
+
         colorPickerDialog.setColorChooserListener(new ColorChooserListener() {
             @Override
             public void onColorChose(int color) {

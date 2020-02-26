@@ -1,9 +1,31 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
 
+    task sourceJar(type: Jar) {
+        from android.sourceSets.main.java.srcDirs
+        classifier "sources"
+    }
+
+    publishing {
+        publications {
+            bar(MavenPublication) {
+                groupId 'com.foo'
+                artifactId 'bar'
+                version '0.1'
+                artifact(sourceJar)
+                artifact("$buildDir/outputs/aar/bar-release.aar")
+            }
+        }
+        repositories {
+            maven {
+                url "$buildDir/repo"
+            }
+        }
+    }
 
     defaultConfig {
         minSdkVersion 19

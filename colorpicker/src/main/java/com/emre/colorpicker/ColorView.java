@@ -6,14 +6,12 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-
 public class ColorView extends View {
 
     private Paint paint = new Paint();
     private int color;
 
-    public ColorView(Context context, @Nullable AttributeSet attrs) {
+    public ColorView(Context context, AttributeSet attrs) {
         super(context, attrs);
         paint.setStyle(Paint.Style.FILL);
     }
