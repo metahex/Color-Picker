@@ -13,6 +13,10 @@ Screenshot:
 
 <img src="https://github.com/metahex/Color-Picker/blob/master/ss1.png" width="140" height="250"/>
 
+<img src="https://github.com/metahex/Color-Picker/blob/master/ss2.png" width="140" height="250"/>
+
+<img src="https://github.com/metahex/Color-Picker/blob/master/ss3.png" width="140" height="250"/>
+
 Usage
 
 `
