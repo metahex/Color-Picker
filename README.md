@@ -7,7 +7,7 @@ A lightweight,simple,dynamic color picker library for Android
 
 [![](https://jitpack.io/v/metahex/Color-Picker.svg)](https://jitpack.io/#metahex/Color-Picker)
 
-`implementation 'com.github.metahex:Color-Picker:1.0.1'`
+`implementation 'com.github.metahex:Color-Picker:master-SNAPSHOT'`
 
 <b>Screenshots:</b>
 
