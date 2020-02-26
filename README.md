@@ -15,7 +15,8 @@ Screenshot:
 
 Usage
 
-`final ColorPickerDialog colorPickerDialog = new ColorPickerDialog(this);
+`
+        final ColorPickerDialog colorPickerDialog = new ColorPickerDialog(this);
 
         colorPickerDialog.addColors(colors16);
 
