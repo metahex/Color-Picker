@@ -3,6 +3,7 @@ package com.emre.colorpicker;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.GridLayout;
@@ -25,10 +26,6 @@ public class ColorPickerDialog extends Dialog implements View.OnClickListener {
         init();
     }
 
-    public void setCornerRadius(int radius){
-
-    }
-
     public void clear(){
         colorList.clear();
         clrLayout.removeAllViewsInLayout();
@@ -46,6 +43,12 @@ public class ColorPickerDialog extends Dialog implements View.OnClickListener {
         layout = findViewById(R.id.mainLayout);
         headerTv = findViewById(R.id.headerTv);
         clrLayout = findViewById(R.id.colorLayout);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        layout.invalidate();
     }
 
     public void addColor(int color){
